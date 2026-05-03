@@ -40,7 +40,7 @@ export default function Footer() {
               <span style={{ color: 'var(--color-electric-yellow)' }}>الرياض</span>
             </div>
             <p className="text-sm mb-4" style={{ color: 'var(--color-foreground-dim)' }}>
-              أقوى كمبروسر شفط وتسليك في الرياض
+              أقوى خدمات التسليك بالكمبروسر في الرياض
             </p>
             <div className="flex gap-3">
               <button
@@ -69,7 +69,7 @@ export default function Footer() {
               خدماتنا
             </h4>
             <ul className="space-y-2">
-              {['شفط بيارات بالكمبروسر', 'تسليك مجاري بالكمبروسر', 'شفط دهون بالكمبروسر', 'صيانة دورية'].map((item) => (
+              {['تسليك مجاري بالكمبروسر', 'تنظيف البيارات', 'تسليك مصائد الدهون', 'صيانة دورية'].map((item) => (
                 <li key={item}>
                   <button
                     onClick={() => scrollToSection('#services')}

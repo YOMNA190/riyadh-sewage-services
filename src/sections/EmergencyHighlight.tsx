@@ -101,7 +101,7 @@ export default function EmergencyHighlight() {
     >
       <div className="content-max-width mx-auto text-center">
         <h2 className="emergency-headline opacity-0 text-section-title font-black mb-4" style={{ color: 'var(--color-obsidian)' }}>
-          طوارئ الصرف الصحي؟ لا تقلق، نوصلك خلال 30 دقيقة!
+          طوارئ التسليك والمجاري؟ لا تقلق، نوصلك خلال 30 دقيقة!
         </h2>
 
         <div ref={phoneRef} className="mb-6">
@@ -129,7 +129,7 @@ export default function EmergencyHighlight() {
         </button>
 
         <p className="emergency-sub opacity-0 text-base font-semibold mt-6" style={{ color: 'rgba(26,26,26,0.7)' }}>
-          لا تنتظر لين تسوء المشكلة — كل دقيقة مهمة في طوارئ الصرف الصحي
+          لا تنتظر لين تسوء المشكلة — كل دقيقة مهمة في تسليك المجاري
         </p>
       </div>
     </section>

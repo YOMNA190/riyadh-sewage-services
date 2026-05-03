@@ -91,7 +91,7 @@ export default function Coverage() {
       <div className="content-max-width mx-auto">
         <SectionHeader
           eyebrow="مناطق التغطية"
-          title="نغطي جميع أحياء الرياض"
+          title="نغطي جميع أحياء الرياض بخدمات التسليك بالكمبروسر"
           description="أينما كنت في الرياض، نوصلك بأسرع وقت. نخدم جميع الأحياء الشمالية، الشرقية، الغربية، والجنوبية."
         />
 
