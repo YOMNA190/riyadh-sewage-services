@@ -87,7 +87,7 @@ export default function Hero() {
   };
 
   const handleWhatsApp = () => {
-    const message = encodeURIComponent('مرحباً أبو رياض، أحتاج كمبروسر الآن في حي [أدخل اسم الحي].. هل متاحين؟');
+    const message = encodeURIComponent('مرحباً أبو رياض، أحتاج كمبروسر شفط الآن في حي [أدخل اسم الحي].. هل متاحين؟');
     window.open(`https://wa.me/966556900804?text=${message}`, '_blank');
   };
 
@@ -137,7 +137,7 @@ export default function Hero() {
           className="hero-headline opacity-0 text-hero-display font-black text-white mb-4"
           style={{ textShadow: '0 4px 24px rgba(0,0,0,0.5)' }}
         >
-          حلول الصرف الصحي الأقوى في الرياض
+          أقوى كمبروسر شفط وتسليك في الرياض
         </h1>
 
         {/* Sub-headline */}

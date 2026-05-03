@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 const services = [
   {
     icon: Truck,
-    title: 'شفط بيارات الصرف الصحي',
+    title: 'شفط بيارات بالكمبروسر',
     description:
       'شفط احترافي للبيارات بأحدث كمبروسرات الشفط العملاقة، تنظيف شامل وإزالة الرواسب والمواد العالقة بكفاءة عالية.',
     image: '/images/service-pumping.jpg',
@@ -23,9 +23,9 @@ const services = [
   },
   {
     icon: Wrench,
-    title: 'شفط دهون المطاعم',
+    title: 'شفط دهون بالكمبروسر',
     description:
-      'خدمات متخصصة لشفط مصائد الدهون للمطاعم والمطابخ التجارية مع التخلص الآمن حسب المعايير البيئية.',
+      'خدمات متخصصة لشفط مصائد الدهون للمطاعم والمطابخ التجارية باستخدام تقنية الكمبروسر لضمان النظافة التامة.',
     image: '/images/service-grease.jpg',
   },
 ];
@@ -85,8 +85,8 @@ export default function Services() {
       <div className="content-max-width mx-auto">
         <SectionHeader
           eyebrow="خدماتنا المتخصصة"
-          title="حلول احترافية لكل مشاكل الصرف الصحي"
-          description="نقدم خدمات شفط وتسليك متكاملة بأحدث المعدات العالمية وفريق فني متخصص"
+          title="أقوى خدمات الشفط بالكمبروسر في الرياض"
+          description="نقدم خدمات شفط وتسليك متكاملة باستخدام أحدث كمبروسرات الضغط العالي وفريق فني متخصص"
         />
 
         {/* Service Cards Grid */}
@@ -126,7 +126,6 @@ export default function Services() {
                 >
                   <service.icon size={32} style={{ color: 'var(--color-electric-yellow)' }} />
                 </div>
-
                 <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
                 <p className="text-base leading-relaxed" style={{ color: 'var(--color-foreground-muted)' }}>
                   {service.description}
