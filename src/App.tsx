@@ -1,29 +1,16 @@
 import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-import Navbar from './sections/Navbar';
-import Hero from './sections/Hero';
-import Services from './sections/Services';
-import WhyUs from './sections/WhyUs';
-import EmergencyHighlight from './sections/EmergencyHighlight';
-import Coverage from './sections/Coverage';
-import HowItWorks from './sections/HowItWorks';
-import Testimonials from './sections/Testimonials';
-import FAQ from './sections/FAQ';
-import Footer from './sections/Footer';
-import StickyEmergencyBar from './components/StickyEmergencyBar';
-import FloatingWhatsApp from './components/FloatingWhatsApp';
+import LandingPage from './pages/LandingPage';
 
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   useEffect(() => {
-    // Refresh ScrollTrigger after all content loads
     const timer = setTimeout(() => {
       ScrollTrigger.refresh();
     }, 100);
-
     return () => {
       clearTimeout(timer);
       ScrollTrigger.getAll().forEach((t) => t.kill());
@@ -31,29 +18,38 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: 'var(--color-obsidian)' }}>
-      <Navbar />
+    <Router>
+      <Routes>
+        {/* Main Home Route */}
+        <Route path="/" element={<LandingPage />} />
 
-      <main>
-        <Hero />
-        <Services />
-        <WhyUs />
-        <EmergencyHighlight />
-        <Coverage />
-        <HowItWorks />
-        <Testimonials />
-        <FAQ />
-      </main>
-
-      <Footer />
-
-      {/* Floating conversion elements */}
-      <StickyEmergencyBar />
-      <FloatingWhatsApp />
-
-      {/* Bottom padding for sticky bar */}
-      <div className="h-20" />
-    </div>
+        {/* 6 Targeted Ad Landing Pages */}
+        <Route 
+          path="/riyadh-sewage-suction" 
+          element={<LandingPage serviceType="شفط بيارات" />} 
+        />
+        <Route 
+          path="/drain-cleaning-riyadh" 
+          element={<LandingPage serviceType="تسليك مجاري" />} 
+        />
+        <Route 
+          path="/compressor-riyadh-service" 
+          element={<LandingPage serviceType="كمبروسر الرياض" />} 
+        />
+        <Route 
+          path="/emergency-sewage-riyadh" 
+          element={<LandingPage serviceType="طوارئ صرف صحي" />} 
+        />
+        <Route 
+          path="/grease-trap-cleaning" 
+          element={<LandingPage serviceType="شفط دهون" />} 
+        />
+        <Route 
+          path="/best-sewage-company-riyadh" 
+          element={<LandingPage serviceType="أفضل شركة صرف صحي" />} 
+        />
+      </Routes>
+    </Router>
   );
 }
 
