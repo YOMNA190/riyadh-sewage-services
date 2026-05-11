@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import LandingPage from './pages/LandingPage';
@@ -18,8 +18,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <Routes>
+    <Routes>
         {/* Main Home Route */}
         <Route path="/" element={<LandingPage />} />
 
@@ -49,7 +48,6 @@ function App() {
           element={<LandingPage serviceType="أفضل شركة صرف صحي" />} 
         />
       </Routes>
-    </Router>
   );
 }
 
