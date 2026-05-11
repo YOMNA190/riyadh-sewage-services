@@ -83,12 +83,21 @@ export default function Hero() {
   }, []);
 
   const handleCall = () => {
-    window.location.href = 'tel:+966556900804';
+    if (typeof window.gtag_report_conversion === 'function') {
+      window.gtag_report_conversion('tel:+966556900804');
+    } else {
+      window.location.href = 'tel:+966556900804';
+    }
   };
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent('مرحباً أبو رياض، أحتاج تسليك كمبروسر الآن في حي [أدخل اسم الحي].. هل متاحين؟');
-    window.open(`https://wa.me/966556900804?text=${message}`, '_blank');
+    const url = `https://wa.me/966556900804?text=${message}`;
+    if (typeof window.gtag_report_conversion === 'function') {
+      window.gtag_report_conversion(url);
+    } else {
+      window.open(url, '_blank');
+    }
   };
 
   return (

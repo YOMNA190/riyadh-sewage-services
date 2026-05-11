@@ -42,7 +42,11 @@ export default function Navbar() {
   };
 
   const handleCall = () => {
-    window.location.href = 'tel:+966556900804';
+    if (typeof window.gtag_report_conversion === 'function') {
+      window.gtag_report_conversion('tel:+966556900804');
+    } else {
+      window.location.href = 'tel:+966556900804';
+    }
   };
 
   return (

@@ -11,7 +11,12 @@ export default function FloatingWhatsApp() {
 
   const handleClick = () => {
     const message = encodeURIComponent('مرحباً أبو رياض، أحتاج كمبروسر الآن في حي [أدخل اسم الحي].. هل متاحين؟');
-    window.open(`https://wa.me/966556900804?text=${message}`, '_blank');
+    const url = `https://wa.me/966556900804?text=${message}`;
+    if (typeof window.gtag_report_conversion === 'function') {
+      window.gtag_report_conversion(url);
+    } else {
+      window.open(url, '_blank');
+    }
   };
 
   return (
