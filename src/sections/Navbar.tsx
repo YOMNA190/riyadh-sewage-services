@@ -43,9 +43,9 @@ export default function Navbar() {
 
   const handleCall = () => {
     if (typeof window.gtag_report_conversion === 'function') {
-      window.gtag_report_conversion('tel:+966556900804');
+      window.gtag_report_conversion('tel:+966576572402');
     } else {
-      window.location.href = 'tel:+966556900804';
+      window.location.href = 'tel:+966576572402';
     }
   };
 
@@ -93,7 +93,7 @@ export default function Navbar() {
               style={{ backgroundColor: 'var(--color-emergency-red)' }}
             >
               <Phone size={16} />
-              <span>اتصل: 0556900804</span>
+              <span>اتصل: 0576572402</span>
             </button>
 
             {/* Mobile Menu Button */}
@@ -131,7 +131,7 @@ export default function Navbar() {
             style={{ backgroundColor: 'var(--color-emergency-red)' }}
           >
             <Phone size={20} />
-            <span>اتصل: 0556900804</span>
+            <span>اتصل: 0576572402</span>
           </button>
         </div>
       )}

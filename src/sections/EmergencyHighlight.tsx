@@ -9,7 +9,7 @@ export default function EmergencyHighlight() {
   const sectionRef = useRef<HTMLElement>(null);
   const phoneRef = useRef<HTMLDivElement>(null);
   const [displayNumber, setDisplayNumber] = useState('0500000000');
-  const targetNumber = '0556900804';
+  const targetNumber = '0576572402';
 
   useEffect(() => {
     if (!sectionRef.current) return;
@@ -89,9 +89,9 @@ export default function EmergencyHighlight() {
 
   const handleCall = () => {
     if (typeof window.gtag_report_conversion === 'function') {
-      window.gtag_report_conversion('tel:+966556900804');
+      window.gtag_report_conversion('tel:+966576572402');
     } else {
-      window.location.href = 'tel:+966556900804';
+      window.location.href = 'tel:+966576572402';
     }
   };
 

@@ -161,7 +161,7 @@ export default function Coverage() {
             <button
               key={neighborhood}
               onClick={() => {
-                window.location.href = 'tel:+966556900804';
+                window.location.href = 'tel:+966576572402';
               }}
               className="px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 hover:scale-105 cursor-pointer"
               style={{

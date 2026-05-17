@@ -9,15 +9,15 @@ const WhatsAppIcon = () => (
 export default function StickyEmergencyBar() {
   const handleCall = () => {
     if (typeof window.gtag_report_conversion === 'function') {
-      window.gtag_report_conversion('tel:+966556900804');
+      window.gtag_report_conversion('tel:+966576572402');
     } else {
-      window.location.href = 'tel:+966556900804';
+      window.location.href = 'tel:+966576572402';
     }
   };
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent('مرحباً أبو رياض، أحتاج كمبروسر الآن في حي [أدخل اسم الحي].. هل متاحين؟');
-    const url = `https://wa.me/966556900804?text=${message}`;
+    const url = `https://wa.me/966576572402?text=${message}`;
     if (typeof window.gtag_report_conversion === 'function') {
       window.gtag_report_conversion(url);
     } else {
@@ -39,7 +39,7 @@ export default function StickyEmergencyBar() {
           <p className="text-xs font-bold" style={{ color: 'var(--color-electric-yellow)' }}>
             طوارئ الصرف الصحي — متوفر 24/7
           </p>
-          <p className="text-lg md:text-xl font-black text-white">0556900804</p>
+          <p className="text-lg md:text-xl font-black text-white">0576572402</p>
         </div>
 
         <div className="flex items-center gap-3">

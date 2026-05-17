@@ -9,15 +9,15 @@ const WhatsAppIcon = ({ size = 16 }: { size?: number }) => (
 export default function Footer() {
   const handleCall = () => {
     if (typeof window.gtag_report_conversion === 'function') {
-      window.gtag_report_conversion('tel:+966556900804');
+      window.gtag_report_conversion('tel:+966576572402');
     } else {
-      window.location.href = 'tel:+966556900804';
+      window.location.href = 'tel:+966576572402';
     }
   };
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent('مرحباً أبو رياض، أحتاج كمبروسر الآن في حي [أدخل اسم الحي].. هل متاحين؟');
-    const url = `https://wa.me/966556900804?text=${message}`;
+    const url = `https://wa.me/966576572402?text=${message}`;
     if (typeof window.gtag_report_conversion === 'function') {
       window.gtag_report_conversion(url);
     } else {
@@ -129,7 +129,7 @@ export default function Footer() {
                 className="flex items-center gap-2 text-base font-bold text-white transition-colors hover:text-[var(--color-electric-yellow)]"
               >
                 <Phone size={18} />
-                0556900804
+                0576572402
               </button>
               <button
                 onClick={handleWhatsApp}
