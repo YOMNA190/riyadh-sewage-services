@@ -84,15 +84,15 @@ export default function Hero() {
 
   const handleCall = () => {
     if (typeof window.gtag_report_conversion === 'function') {
-      window.gtag_report_conversion('tel:+966576572402');
+      window.gtag_report_conversion('tel:+966501401518');
     } else {
-      window.location.href = 'tel:+966576572402';
+      window.location.href = 'tel:+966501401518';
     }
   };
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent('مرحباً أبو رياض، أحتاج تسليك كمبروسر الآن في حي [أدخل اسم الحي].. هل متاحين؟');
-    const url = `https://wa.me/966576572402?text=${message}`;
+    const url = `https://wa.me/966501401518?text=${message}`;
     if (typeof window.gtag_report_conversion === 'function') {
       window.gtag_report_conversion(url);
     } else {
@@ -164,7 +164,7 @@ export default function Hero() {
             style={{ backgroundColor: 'var(--color-emergency-red)' }}
           >
             <Phone size={20} />
-            اتصل الآن: 0576572402
+            اتصل الآن: 0501401518
           </button>
 
           <button

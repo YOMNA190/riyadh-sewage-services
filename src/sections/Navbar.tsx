@@ -43,9 +43,9 @@ export default function Navbar() {
 
   const handleCall = () => {
     if (typeof window.gtag_report_conversion === 'function') {
-      window.gtag_report_conversion('tel:+966576572402');
+      window.gtag_report_conversion('tel:+966501401518');
     } else {
-      window.location.href = 'tel:+966576572402';
+      window.location.href = 'tel:+966501401518';
     }
   };
 
@@ -93,7 +93,7 @@ export default function Navbar() {
               style={{ backgroundColor: 'var(--color-emergency-red)' }}
             >
               <Phone size={16} />
-              <span>اتصل: 0576572402</span>
+              <span>اتصل: 0501401518</span>
             </button>
 
             {/* Mobile Menu Button */}
@@ -131,7 +131,7 @@ export default function Navbar() {
             style={{ backgroundColor: 'var(--color-emergency-red)' }}
           >
             <Phone size={20} />
-            <span>اتصل: 0576572402</span>
+            <span>اتصل: 0501401518</span>
           </button>
         </div>
       )}
