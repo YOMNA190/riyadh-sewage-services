@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Star } from 'lucide-react';
@@ -40,7 +40,6 @@ const testimonials = [
 export default function Testimonials() {
   const sectionRef = useRef<HTMLElement>(null);
   const cardsRef = useRef<HTMLDivElement>(null);
-  const [ratingValue, setRatingValue] = useState(0);
 
   useEffect(() => {
     if (!sectionRef.current || !cardsRef.current) return;
@@ -64,23 +63,6 @@ export default function Testimonials() {
         }
       );
 
-      // Rating counter
-      ScrollTrigger.create({
-        trigger: '.rating-summary',
-        start: 'top 90%',
-        once: true,
-        onEnter: () => {
-          const obj = { val: 0 };
-          gsap.to(obj, {
-            val: 4.9,
-            duration: 1.5,
-            ease: 'power2.out',
-            onUpdate: () => {
-              setRatingValue(parseFloat(obj.val.toFixed(1)));
-            },
-          });
-        },
-      });
     }, sectionRef);
 
     return () => ctx.revert();
@@ -154,7 +136,7 @@ export default function Testimonials() {
               className="text-5xl md:text-6xl font-black"
               style={{ color: 'var(--color-electric-yellow)' }}
             >
-              {ratingValue.toFixed(1)}
+              4.9
             </span>
           </div>
           <div className="flex justify-center gap-1 mb-3">

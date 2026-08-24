@@ -9,8 +9,8 @@ gsap.registerPlugin(ScrollTrigger);
 const features = [
   {
     icon: Clock,
-    title: 'وصول خلال 30 دقيقة',
-    description: 'أسرع خدمة تسليك بالكمبروسر في الرياض، نوصلك بوقت قياسي مهما كان الحي.',
+    title: 'استجابة سريعة داخل الرياض',
+    description: 'ننسق معك موعد وصول الفني حسب موقعك وحالة الطلب داخل أحياء الرياض.',
   },
   {
     icon: Truck,

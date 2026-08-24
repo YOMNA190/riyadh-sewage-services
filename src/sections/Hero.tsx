@@ -91,7 +91,7 @@ export default function Hero() {
   };
 
   const handleWhatsApp = () => {
-    const message = encodeURIComponent('مرحباً أبو رياض، أحتاج تسليك كمبروسر الآن في حي [أدخل اسم الحي].. هل متاحين؟');
+    const message = encodeURIComponent('مرحباً، أحتاج تسليك مجاري بالكمبروسر في حي [أدخل اسم الحي].. هل متاحين؟');
     const url = `https://wa.me/966501401518?text=${message}`;
     if (typeof window.gtag_report_conversion === 'function') {
       window.gtag_report_conversion(url);
@@ -146,14 +146,14 @@ export default function Hero() {
           className="hero-headline opacity-0 text-hero-display font-black text-white mb-4"
           style={{ textShadow: '0 4px 24px rgba(0,0,0,0.5)' }}
         >
-          أقوى خدمات التسليك بالكمبروسر في الرياض
+          تسليك مجاري بالكمبروسر في الرياض
         </h1>
 
         {/* Sub-headline */}
         <p className="hero-sub opacity-0 text-hero-sub font-semibold max-w-[600px] mx-auto mb-8"
           style={{ color: 'var(--color-foreground-muted)' }}
         >
-          نصلك خلال 30 دقيقة بأحدث آلياتنا المتطورة — خدمة طوارئ 24/7
+          حل سريع لانسداد المجاري باستخدام معدات الضغط العالي — اتصل أو راسلنا لطلب الخدمة
         </p>
 
         {/* CTA Buttons */}
@@ -180,10 +180,10 @@ export default function Hero() {
         {/* Trust Stats */}
         <div className="hero-stats opacity-0 flex flex-wrap items-center justify-center gap-6 md:gap-10">
           {[
-            { value: '+10,000', label: 'عملية ناجحة' },
-            { value: '30', label: 'دقيقة وصول' },
-            { value: '24/7', label: 'خدمة متواصلة' },
-            { value: '5.0', label: 'تقييم العملاء', icon: true },
+            { value: '24/7', label: 'استقبال الطلبات' },
+            { value: 'الرياض', label: 'نطاق الخدمة' },
+            { value: 'ضغط عالٍ', label: 'تسليك متخصص' },
+            { value: 'اتصال', label: 'وWhatsApp مباشر' },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="flex items-center gap-1 justify-center">

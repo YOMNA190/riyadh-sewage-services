@@ -105,7 +105,7 @@ export default function EmergencyHighlight() {
     >
       <div className="content-max-width mx-auto text-center">
         <h2 className="emergency-headline opacity-0 text-section-title font-black mb-4" style={{ color: 'var(--color-obsidian)' }}>
-          طوارئ التسليك والمجاري؟ لا تقلق، نوصلك خلال 30 دقيقة!
+          عندك انسداد طارئ؟ اتصل الآن لتنسيق خدمة التسليك
         </h2>
 
         <div ref={phoneRef} className="mb-6">

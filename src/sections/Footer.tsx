@@ -16,7 +16,7 @@ export default function Footer() {
   };
 
   const handleWhatsApp = () => {
-    const message = encodeURIComponent('مرحباً أبو رياض، أحتاج كمبروسر الآن في حي [أدخل اسم الحي].. هل متاحين؟');
+    const message = encodeURIComponent('مرحباً، أحتاج تسليك مجاري بالكمبروسر في حي [أدخل اسم الحي].. هل متاحين؟');
     const url = `https://wa.me/966501401518?text=${message}`;
     if (typeof window.gtag_report_conversion === 'function') {
       window.gtag_report_conversion(url);

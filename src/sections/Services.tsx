@@ -85,8 +85,8 @@ export default function Services() {
       <div className="content-max-width mx-auto">
         <SectionHeader
           eyebrow="خدماتنا المتخصصة"
-          title="أقوى خدمات التسليك بالكمبروسر في الرياض"
-          description="نقدم خدمات تسليك متكاملة باستخدام أحدث كمبروسرات الضغط العالي وفريق فني متخصص في التسليك"
+          title="تسليك مجاري بالكمبروسر في الرياض"
+          description="حل انسداد المجاري والأنابيب بالكمبروسر ومعدات الضغط العالي — اتصل أو راسلنا لطلب الخدمة"
         />
 
         {/* Service Cards Grid */}
@@ -151,13 +151,38 @@ export default function Services() {
         >
           <div className="flex items-center gap-3">
             <Shield size={24} style={{ color: 'var(--color-electric-yellow)' }} />
-            <span className="text-base font-bold text-white">ضمان رضا 100% على جميع خدماتنا</span>
+            <span className="text-base font-bold text-white">تسليك متخصص بالكمبروسر</span>
           </div>
           <div className="hidden md:block w-px h-6" style={{ backgroundColor: 'var(--color-industrial)' }} />
           <div className="flex items-center gap-3">
             <Clock size={24} style={{ color: 'var(--color-electric-yellow)' }} />
-            <span className="text-base font-bold text-white">استجابة فورية — لا نتأخر عن موعدنا</span>
+            <span className="text-base font-bold text-white">اتصال وWhatsApp مباشر</span>
           </div>
+        </div>
+
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a
+            href="tel:+966501401518"
+            onClick={(event) => {
+              if (typeof window.gtag_report_conversion === 'function') {
+                event.preventDefault();
+                window.gtag_report_conversion('tel:+966501401518');
+              }
+            }}
+            className="w-full sm:w-auto px-7 py-3 rounded-full text-base font-extrabold text-white text-center transition-transform hover:scale-105 active:scale-95"
+            style={{ backgroundColor: 'var(--color-emergency-red)' }}
+          >
+            اتصل الآن: 0501401518
+          </a>
+          <a
+            href="https://wa.me/966501401518?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%AA%D8%B3%D9%84%D9%8A%D9%83%20%D9%85%D8%AC%D8%A7%D8%B1%D9%8A%20%D8%A8%D8%A7%D9%84%D9%83%D9%85%D8%A8%D8%B1%D9%88%D8%B3%D8%B1"
+            target="_blank"
+            rel="noreferrer"
+            className="w-full sm:w-auto px-7 py-3 rounded-full text-base font-extrabold text-white text-center transition-transform hover:scale-105 active:scale-95"
+            style={{ backgroundColor: 'var(--color-whatsapp-green)' }}
+          >
+            راسلنا على WhatsApp
+          </a>
         </div>
       </div>
     </section>
