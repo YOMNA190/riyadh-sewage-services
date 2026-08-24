@@ -34,6 +34,7 @@ export default function Footer() {
 
   return (
     <footer
+      id="contact"
       className="pt-16 pb-6 px-4"
       style={{
         backgroundColor: 'var(--color-obsidian)',
