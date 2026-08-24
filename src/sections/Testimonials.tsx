@@ -78,8 +78,8 @@ export default function Testimonials() {
       <div className="content-max-width mx-auto">
         <SectionHeader
           eyebrow="آراء عملائنا"
-          title="أكثر من 10,000 عميل راضٍ في الرياض"
-          description="تعرف على تجارب عملائنا في مختلف أحياء الرياض"
+          title="تجارب عملاء في أحياء الرياض"
+          description="اطّلع على تجارب العملاء مع خدمة تسليك المجاري بالكمبروسر"
           light
         />
 
@@ -150,7 +150,7 @@ export default function Testimonials() {
             ))}
           </div>
           <p className="text-base" style={{ color: 'var(--color-text-secondary-dark)' }}>
-            متوسط التقييم من 500+ عميل
+            التقييم المعروض بناءً على مراجعات العملاء
           </p>
         </div>
       </div>
