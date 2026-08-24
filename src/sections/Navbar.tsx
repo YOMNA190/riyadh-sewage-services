@@ -3,10 +3,10 @@ import gsap from 'gsap';
 import { Phone, Menu, X } from 'lucide-react';
 
 const navLinks = [
-  { label: 'خدماتنا', href: '#services' },
-  { label: 'مناطقنا', href: '#coverage' },
-  { label: 'آراء العملاء', href: '#testimonials' },
-  { label: 'الأسئلة الشائعة', href: '#faq' },
+  { label: 'خدماتنا', href: '#خدماتنا' },
+  { label: 'مناطقنا', href: '#تغطية-الرياض' },
+  { label: 'آراء العملاء', href: '#آراء-العملاء' },
+  { label: 'الأسئلة الشائعة', href: '#الأسئلة-الشائعة' },
 ];
 
 export default function Navbar() {

@@ -139,7 +139,7 @@ export default function FAQ() {
   return (
     <section
       ref={sectionRef}
-      id="faq"
+      id="الأسئلة-الشائعة"
       className="section-padding"
       style={{ backgroundColor: 'var(--color-surface-dark)' }}
     >

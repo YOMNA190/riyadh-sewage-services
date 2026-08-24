@@ -57,7 +57,7 @@ export default function Testimonials() {
   return (
     <section
       ref={sectionRef}
-      id="testimonials"
+      id="آراء-العملاء"
       className="section-padding"
       style={{ backgroundColor: 'var(--color-surface-light)' }}
     >

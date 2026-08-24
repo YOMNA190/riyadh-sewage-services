@@ -34,7 +34,7 @@ export default function Footer() {
 
   return (
     <footer
-      id="contact"
+      id="تواصل-معنا"
       className="pt-16 pb-6 px-4"
       style={{
         backgroundColor: 'var(--color-obsidian)',
@@ -82,7 +82,7 @@ export default function Footer() {
               {['تسليك مجاري بالكمبروسر', 'تسليك مجاري الحمامات', 'تسليك مجاري المطابخ', 'تسليك بالضغط العالي'].map((item) => (
                 <li key={item}>
                   <button
-                    onClick={() => scrollToSection('#services')}
+                    onClick={() => scrollToSection('#خدماتنا')}
                     className="text-sm transition-colors duration-200 hover:text-white"
                     style={{ color: 'var(--color-foreground-muted)' }}
                   >
@@ -105,7 +105,7 @@ export default function Footer() {
               {['شمال الرياض', 'شرق الرياض', 'غرب الرياض', 'جنوب الرياض'].map((item) => (
                 <li key={item}>
                   <button
-                    onClick={() => scrollToSection('#coverage')}
+                    onClick={() => scrollToSection('#تغطية-الرياض')}
                     className="text-sm transition-colors duration-200 hover:text-white"
                     style={{ color: 'var(--color-foreground-muted)' }}
                   >

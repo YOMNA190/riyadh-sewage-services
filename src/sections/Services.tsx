@@ -78,7 +78,7 @@ export default function Services() {
   return (
     <section
       ref={sectionRef}
-      id="services"
+      id="خدماتنا"
       className="section-padding"
       style={{ backgroundColor: 'var(--color-surface-dark)' }}
     >

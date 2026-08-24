@@ -84,7 +84,7 @@ export default function Coverage() {
   return (
     <section
       ref={sectionRef}
-      id="coverage"
+      id="تغطية-الرياض"
       className="section-padding"
       style={{ backgroundColor: 'var(--color-surface-dark)' }}
     >
