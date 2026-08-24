@@ -9,15 +9,15 @@ const WhatsAppIcon = ({ size = 16 }: { size?: number }) => (
 export default function Footer() {
   const handleCall = () => {
     if (typeof window.gtag_report_conversion === 'function') {
-      window.gtag_report_conversion('tel:+966538962213');
+      window.gtag_report_conversion('tel:+966501401518');
     } else {
-      window.location.href = 'tel:+966538962213';
+      window.location.href = 'tel:+966501401518';
     }
   };
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent('مرحباً أبو رياض، أحتاج كمبروسر الآن في حي [أدخل اسم الحي].. هل متاحين؟');
-    const url = `https://wa.me/966538962213?text=${message}`;
+    const url = `https://wa.me/966501401518?text=${message}`;
     if (typeof window.gtag_report_conversion === 'function') {
       window.gtag_report_conversion(url);
     } else {
@@ -129,7 +129,7 @@ export default function Footer() {
                 className="flex items-center gap-2 text-base font-bold text-white transition-colors hover:text-[var(--color-electric-yellow)]"
               >
                 <Phone size={18} />
-                0538962213
+                0501401518
               </button>
               <button
                 onClick={handleWhatsApp}

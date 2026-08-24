@@ -8,8 +8,8 @@ gsap.registerPlugin(ScrollTrigger);
 export default function EmergencyHighlight() {
   const sectionRef = useRef<HTMLElement>(null);
   const phoneRef = useRef<HTMLDivElement>(null);
-  const [displayNumber, setDisplayNumber] = useState('0500000000');
-  const targetNumber = '0538962213';
+  const [displayNumber, setDisplayNumber] = useState('0501401518');
+  const targetNumber = '0501401518';
 
   useEffect(() => {
     if (!sectionRef.current) return;
@@ -71,7 +71,7 @@ export default function EmergencyHighlight() {
         start: 'top 85%',
         once: true,
         onEnter: () => {
-          const obj = { val: 5000000000 };
+          const obj = { val: 501401518 };
           gsap.to(obj, {
             val: parseInt(targetNumber),
             duration: 1.5,
@@ -89,9 +89,9 @@ export default function EmergencyHighlight() {
 
   const handleCall = () => {
     if (typeof window.gtag_report_conversion === 'function') {
-      window.gtag_report_conversion('tel:+966538962213');
+      window.gtag_report_conversion('tel:+966501401518');
     } else {
-      window.location.href = 'tel:+966538962213';
+      window.location.href = 'tel:+966501401518';
     }
   };
 
