@@ -137,7 +137,7 @@ export default function Hero() {
         >
           <Clock size={14} style={{ color: 'var(--color-electric-yellow)' }} />
           <span className="text-sm font-semibold" style={{ color: 'var(--color-electric-yellow)' }}>
-            خدمة 24 ساعة على مدار الأسبوع
+            تنسيق سريع داخل أحياء الرياض
           </span>
         </div>
 
@@ -180,7 +180,7 @@ export default function Hero() {
         {/* Trust Stats */}
         <div className="hero-stats opacity-0 flex flex-wrap items-center justify-center gap-6 md:gap-10">
           {[
-            { value: '24/7', label: 'استقبال الطلبات' },
+            { value: 'سريع', label: 'تنسيق الطلب' },
             { value: 'الرياض', label: 'نطاق الخدمة' },
             { value: 'ضغط عالٍ', label: 'تسليك متخصص' },
             { value: 'اتصال', label: 'وWhatsApp مباشر' },

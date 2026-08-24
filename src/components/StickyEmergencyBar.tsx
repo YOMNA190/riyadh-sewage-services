@@ -37,7 +37,7 @@ export default function StickyEmergencyBar() {
       <div className="content-max-width mx-auto px-4 py-3 md:py-4 flex items-center justify-between gap-4">
         <div className="flex-shrink-0">
           <p className="text-xs font-bold" style={{ color: 'var(--color-electric-yellow)' }}>
-            طوارئ الصرف الصحي — متوفر 24/7
+            تسليك بالكمبروسر داخل الرياض
           </p>
           <p className="text-lg md:text-xl font-black text-white">0501401518</p>
         </div>

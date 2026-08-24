@@ -140,7 +140,7 @@ export default function Footer() {
                 واتساب مباشر
               </button>
               <p className="text-sm" style={{ color: 'var(--color-foreground-dim)' }}>
-                متواجدون 24/7
+                ننسق موعد الخدمة داخل الرياض
               </p>
             </div>
           </div>
