@@ -11,6 +11,7 @@ import FAQ from '../sections/FAQ';
 import Footer from '../sections/Footer';
 import StickyEmergencyBar from '../components/StickyEmergencyBar';
 import FloatingWhatsApp from '../components/FloatingWhatsApp';
+import CallInvitePopup from '../components/CallInvitePopup';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 interface LandingPageProps {
@@ -49,6 +50,7 @@ const LandingPage = ({ title, description, serviceType }: LandingPageProps) => {
       <Footer />
       <StickyEmergencyBar />
       <FloatingWhatsApp />
+      <CallInvitePopup />
       <div className="h-20" />
     </div>
   );

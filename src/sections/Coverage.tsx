@@ -161,7 +161,12 @@ export default function Coverage() {
             <button
               key={neighborhood}
               onClick={() => {
-                window.location.href = 'tel:+966501401518';
+                const phoneUrl = 'tel:+966501401518';
+                if (typeof window.gtag_report_conversion === 'function') {
+                  window.gtag_report_conversion(phoneUrl);
+                } else {
+                  window.location.href = phoneUrl;
+                }
               }}
               className="px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 hover:scale-105 cursor-pointer"
               style={{

@@ -176,6 +176,12 @@ export default function Services() {
           </a>
           <a
             href="https://wa.me/966501401518?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%AA%D8%B3%D9%84%D9%8A%D9%83%20%D9%85%D8%AC%D8%A7%D8%B1%D9%8A%20%D8%A8%D8%A7%D9%84%D9%83%D9%85%D8%A8%D8%B1%D9%88%D8%B3%D8%B1"
+            onClick={(event) => {
+              if (typeof window.gtag_report_conversion === 'function') {
+                event.preventDefault();
+                window.gtag_report_conversion('https://wa.me/966501401518?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8B%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%AA%D8%B3%D9%84%D9%8A%D9%83%20%D9%85%D8%AC%D8%A7%D8%B1%D9%8A%20%D8%A8%D8%A7%D9%84%D9%83%D9%85%D8%A8%D8%B1%D9%88%D8%B3%D8%B1');
+              }
+            }}
             target="_blank"
             rel="noreferrer"
             className="w-full sm:w-auto px-7 py-3 rounded-full text-base font-extrabold text-white text-center transition-transform hover:scale-105 active:scale-95"
