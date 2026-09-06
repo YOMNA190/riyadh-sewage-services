@@ -161,7 +161,7 @@ export default function Coverage() {
             <button
               key={neighborhood}
               onClick={() => {
-                const phoneUrl = 'tel:+966501401518';
+                const phoneUrl = 'tel:+966544190082';
                 if (typeof window.gtag_report_conversion === 'function') {
                   window.gtag_report_conversion(phoneUrl);
                 } else {

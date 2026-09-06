@@ -9,15 +9,15 @@ const WhatsAppIcon = ({ size = 16 }: { size?: number }) => (
 export default function Footer() {
   const handleCall = () => {
     if (typeof window.gtag_report_conversion === 'function') {
-      window.gtag_report_conversion('tel:+966501401518');
+      window.gtag_report_conversion('tel:+966544190082');
     } else {
-      window.location.href = 'tel:+966501401518';
+      window.location.href = 'tel:+966544190082';
     }
   };
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent('مرحباً، أحتاج تسليك مجاري بالكمبروسر في حي [أدخل اسم الحي].. هل متاحين؟');
-    const url = `https://wa.me/966501401518?text=${message}`;
+    const url = `https://wa.me/966578342054?text=${message}`;
     if (typeof window.gtag_report_conversion === 'function') {
       window.gtag_report_conversion(url);
     } else {
@@ -130,7 +130,7 @@ export default function Footer() {
                 className="flex items-center gap-2 text-base font-bold text-white transition-colors hover:text-[var(--color-electric-yellow)]"
               >
                 <Phone size={18} />
-                0501401518
+                0544190082 / 0578342054
               </button>
               <button
                 onClick={handleWhatsApp}

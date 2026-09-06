@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { MessageCircle, Phone, X } from 'lucide-react';
 
-const PHONE_URL = 'tel:+966501401518';
+const PHONE_URL = 'tel:+966544190082';
 const WHATSAPP_MESSAGE = 'مرحباً، أحتاج تسليك مجاري بالكمبروسر في حي [أدخل اسم الحي].. هل متاحين؟';
-const WHATSAPP_URL = `https://wa.me/966501401518?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+const WHATSAPP_URL = `https://wa.me/966578342054?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
 export default function CallInvitePopup() {
   const [isOpen, setIsOpen] = useState(false);

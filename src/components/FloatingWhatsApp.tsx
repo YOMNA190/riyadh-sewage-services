@@ -11,7 +11,7 @@ export default function FloatingWhatsApp() {
 
   const handleClick = () => {
     const message = encodeURIComponent('مرحباً، أحتاج تسليك مجاري بالكمبروسر في حي [أدخل اسم الحي].. هل متاحين؟');
-    const url = `https://wa.me/966501401518?text=${message}`;
+    const url = `https://wa.me/966578342054?text=${message}`;
     if (typeof window.gtag_report_conversion === 'function') {
       window.gtag_report_conversion(url);
     } else {
